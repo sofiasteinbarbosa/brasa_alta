@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contato - Churrascaria Brasa Alta</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="produtos.css">
+
+</head>
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="logo.png"></h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Preços</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<form>
+			<label for="nomesobrenome">Nome Completo</label>
+			<input type="text" id="nomesobrenome" class="input-basico" required>
+
+			<label for="email">Email</label>
+			<input type="email" name="email" class="input-basico" required placeholder="email@dominio.com">
+
+			<label for="telefone">Telefone</label>
+			<input type="tel" name="telefone" class="input-basico" required placeholder="(xx) xxxxx-xxxx">
+
+			<label for="mensagem">Mensagem</label>
+			<textarea cols="70" rows="10" id="mensagem" class="input-basico"></textarea>
+
+			<fieldset>
+				<legend>Como prefere nosso contato?</legend>
+
+				<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" required>Email</label>
+
+				<label for="radio-telefone"><input type="radio" name="contato" value="´telefone" id="radio-telefone" required>Telefone</label>
+
+				<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" required>Whatsapp</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Qual horário prefere ser atendido?</legend>
+				<select>
+					<option>Manhã</option>
+					<option>Tarde</option>
+					<option>Noite</option>
+				</select>
+			</fieldset>
+
+			<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades?</label>
+
+			<input type="submit" value="Enviar Formulário" class="enviar">
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Dia</th>
+					<th>Horario</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Seg à Sex</td>
+					<td>17h ~ 23h</td>
+				</tr>
+				<tr>
+					<td>Sábado</td>
+					<td>18h ~ 24h</td>
+				</tr>
+				<tr>
+					<td>Domingo</td>
+					<td>18h ~ 24h</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</main>
+
+	<footer>
+		<img src="logo.png">
+		<p class="copyright">&copy; Copyright Churrascaria Brasa Alta - 2023</p>
+	</footer>
+</body>
+</html>
